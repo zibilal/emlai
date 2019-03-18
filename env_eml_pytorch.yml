@@ -1,0 +1,47 @@
+name: eml_pytorch
+
+channels:
+- pytorch
+- anaconda 
+- conda-forge
+
+dependencies:
+# Essential
+- python==3.6.7
+- numpy==1.15.4
+- scipy==1.2.0
+- pandas==0.24.0
+- tqdm==4.29.1
+- plac==1.0.0
+# Machine Learning
+- scikit-learn==0.20.2
+- statsmodels==0.9.0
+- imbalanced-learn==0.4.3
+# Visualization
+- matplotlib==3.0.2
+- seaborn==0.9.0
+# NLP
+- nltk==3.4
+- gensim==3.4.0
+# Deep Learning
+- pytorch==1.0.0
+# Jupyter
+- jupyter==1.0.0
+- nb_conda==2.2.1
+- ipython==7.1.1
+- jupyter_contrib_nbextensions==0.5.1
+
+- pip:
+  # Machine Learning
+  - xgboost==0.80  
+  - scikit-optimize==0.5.2
+  - swifter==0.281
+  # CV
+  - torchvision==0.2.1
+  - opencv-python==3.4.3.18
+  - pillow==5.4.1
+  # Clustering
+  - fuzzywuzzy==0.17.0
+  - python-Levenshtein==0.12.0
+  # Pandas feather
+  - feather-format==0.4.0  
